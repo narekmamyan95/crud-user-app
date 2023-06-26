@@ -1,0 +1,1 @@
+export const DELETE = "Are you sure you want to delete?"

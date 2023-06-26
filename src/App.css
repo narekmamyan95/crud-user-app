@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+body {
+    background-color: rgb(215, 211, 211);
+}
+
+h1 {
+    font-size: 39px;
+    letter-spacing: 3px;
+    color: rgb(45, 87, 45);
+    margin-top: 70px;
+    text-align: center;
+    font-style: normal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.loginPageContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.loginPageContainer input {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    color: green;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.loginPageContainer input::placeholder {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.loginPageContainer button {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    color: darkgreen;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.loginPageContainer button:hover {
+    background-color: rgb(45, 86, 45);
+    width: 102px;
+    border-radius: 9px;
+    color: white;
+}
+
+.loginPageContainer button:active {
+    background-color: rgb(15, 51, 15);
+    color: white;
+}
+
+
+/*create user page*/
+.createContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 35px auto;
+    width: 100%;
+    background-color: rgb(215, 211, 211);
+    pad: 0;
+}
+
+.createContainer input {
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(230, 227, 227);
+    width: 500px;
+    margin: 30px auto;
+    color: rgb(2, 55, 2);
+    border: none;
+    box-shadow: rgba(71, 83, 74, 0.4) 2px 2px 4px, rgba(40, 52, 45, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 3px;
+    border: 1px solid green;
+    
+}
+
+.createContainer input::placeholder {
+    text-align: center;
+    color: rgb(101, 109, 101);
+}
+
+.createContainer button {
+    width: 100px;
+    height: 50px;
+    margin: 50px auto;
+    color: darkgreen;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.createContainer button:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.createContainer button:active {
+    width: 108px;
+}
+@media screen and (max-width: 768px) {
+    .createContainer input {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .createContainer button {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .createContainer input {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .createContainer button {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+/*footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 80, 30);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        height: 80px;
+    }
+}
+/*header*/
+
+header {
+        box-sizing: border-box;
+        padding: 0 20px;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(30, 80, 30);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 20px -15px;
+}
+.headerUser {
+    text-align: center;
+}
+.headerUser p {
+    color: lightgreen;
+    font-weight: bold;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+.headerUser label {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: serif;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+   
+}
+.headernavigate a {
+    font-weight: bold;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:initial;
+    color: rgb(235, 228, 228);
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(15, 15, 15, 0.3);
+}
+.headernavigate a:hover {
+    border-bottom: 3px solid white;
+    text-shadow: none;
+}
+header button {
+    border: none;
+    background-color: rgb(7, 69, 26);
+    color: rgb(226, 223, 223);
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font: size 15px;
+    font-style: normal;
+    letter-spacing: 1px;
+    box-shadow: rgba(23, 21, 21, 0.45) 0px 35px 20px -15px;
+
+}
+header button:hover {
+    height: 40px;
+
+}
+h3 a {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 80px;
+        padding: 0 10px;
+    }
+
+    .headerUser {
+        text-align: left;
+    }
+
+    .headerUser label {
+        font-size: 18px;
+    }
+
+    .headernavigate a {
+        font-size: 12px;
+    }
+
+    header button {
+        width: 80px;
+        height: 30px;
+    }
+
+    h3 a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 100px;
+        padding: 0 5px;
+    }
+
+    .headerUser label {
+        font-size: 16px;
+    }
+
+    .headernavigate a {
+        font-size: 10px;
+    }
+
+    header button {
+        width: 70px;
+        height: 25px;
+    }
+
+    h3 a {
+        font-size: 16px;
+    }
+}
+/* About page*/
+.aboutpageContainer p {
+    width: 300px;
+    margin: 150px auto;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+.aboutpageContainer h1 {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.aboutpageContainer span {
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(63, 62, 62);
+}
+.aboutpageutorContainer {
+    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+    .aboutpageContainer p {
+        width: 90%;
+        margin: 100px auto;
+        font-size: 16px;
+    }
+
+    .aboutpageContainer h1 {
+        font-size: 24px;
+    }
+
+    .aboutpageContainer span {
+        font-size: 18px;
+    }
+
+    .aboutpageutorContainer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutpageContainer p {
+        width: 80%;
+        margin: 80px auto;
+        font-size: 14px;
+    }
+
+    .aboutpageContainer h1 {
+        font-size: 20px;
+    }
+
+    .aboutpageContainer span {
+        font-size: 16px;
+    }
+
+    .aboutpageutorContainer {
+        font-size: 12px;
+    }
+}
+/* Not found page*/
+.notFound_container h1 {
+    margin-top: 200px;
+}
+.notFound_container button {
+   margin-left: 45%;
+   margin-top: 80px;
+   width: 100px;
+   height: 50px;
+   border: none;
+   background-color: green;
+   color: white;
+   font-weight: bold;
+}
+.notFound_container label {
+   margin-left: 47%;
+   margin-top: 100px;
+   width: 100px;
+   height: 30px;
+   display: block;
+   font-size: 35px;
+   color: green;
+}
+@media screen and (max-width: 768px) {
+    .notFound_container h1 {
+        margin-top: 150px;
+    }
+
+    .notFound_container button {
+        margin-left: 40%;
+        margin-top: 60px;
+    }
+
+    .notFound_container label {
+        margin-left: 42%;
+        margin-top: 80px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .notFound_container h1 {
+        margin-top: 100px;
+    }
+
+    .notFound_container button {
+        margin-left: 35%;
+        margin-top: 40px;
+        width: 80px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .notFound_container label {
+        margin-left: 38%;
+        margin-top: 60px;
+        font-size: 25px;
+    }
+}
+/* Table */
+table {
+    width: 900px;
+    height: 400px;
+    border-collapse: collapse;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;    
+    box-shadow: rgba(56, 92, 83, 0.56) 0px 22px 70px 4px;
+}
+th {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(2, 69, 2);
+    color: white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+td {
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    border-bottom: 2px solid rgb(2, 69, 2);
+    border-right: 2px solid rgb(2, 69, 2);
+    color: darkgreen;
+    font-style: normal;
+    text-shadow: 2px 7px 5px rgba(39, 38, 38, 0.3), 
+    0px -4px 10px rgba(247, 243, 243, 0.3);
+    font-weight: 600;
+    
+}
+td:last-child {
+    border-right: none;
+}
+td button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(4, 109, 4);
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(17, 16, 16, 0.3);
+}
+
+td button:active {
+    background-color: rgb(33, 44, 33);
+    color: white;
+}
+
+/* updatePopap */
+
+.updatePopapContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 7777;
+    background-color: rgba(13, 13, 13, 0.7);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.updatePopapContainer form input{
+    width: 40%;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.updatePopapContainer form input::placeholder {
+    font-weight: bold;
+}
+.popapBtn{
+    width: 40%;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 15px;
+    background-color: rgb(50, 48, 48);
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(56, 92, 83, 0.56) 0px 22px 70px 4px;
+}
